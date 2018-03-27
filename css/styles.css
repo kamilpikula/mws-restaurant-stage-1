@@ -157,6 +157,9 @@ nav h1 a {
   width: calc(100% - 25px);
   display: inline-block;
 }
+#restaurants-list li:hover {
+    border: 2px solid #01447e;
+}
 #restaurants-list .restaurant-img {
   background-color: #ccc;
   display: block;
@@ -214,7 +217,10 @@ nav h1 a {
   position: absolute;
   width: calc(100% - 50px);
 }
-#restaurant-name {
+#main-info, #more-info {
+    display: inline-block;
+}
+#restaurant-name, #restaurant-address {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 20pt;
@@ -223,13 +229,10 @@ nav h1 a {
   margin: 15px 0 30px;
   text-transform: uppercase;
   line-height: 1.1;
+  text-align: center;
 }
 #restaurant-img {
 	width: 100%;
-}
-#restaurant-address {
-  font-size: 12pt;
-  margin: 10px 0px;
 }
 #restaurant-cuisine {
   background-color: #333;
@@ -243,6 +246,14 @@ nav h1 a {
   text-transform: uppercase;
   width: 100%;
 }
+#table-with-hours {
+    width: 100%;
+    overflow-x: auto;
+}
+#restaurant-container {
+    display: flex;
+    flex-wrap: wrap;
+}
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
@@ -252,27 +263,30 @@ nav h1 a {
 #reviews-container {
   padding: 30px 40px 80px;
 }
-#reviews-container h2 {
+#reviews-container .reviews-header {
   color: #f58500;
   font-size: 24pt;
   font-weight: 300;
   letter-spacing: -1px;
   padding-bottom: 1pt;
+  text-align: center;
 }
 #reviews-list {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 #reviews-list li {
   background-color: #fff;
     border: 2px solid #f3f3f3;
-  display: block;
+  display: inline-block;
   list-style-type: none;
-  margin: 0 0 30px;
+  margin: 0 4px 30px;
   overflow: hidden;
   padding: 0 20px 20px;
   position: relative;
-  width: calc(100% - 4px);
+  width: calc(100% - 40px);
 }
 #reviews-list li p {
   margin: 0 0 10px;
@@ -287,6 +301,18 @@ nav h1 a {
     }
 }
 
+@media screen and (min-width: 600px) {
+    #main-info {
+        padding-right: 15px;
+    }
+    #more-info {
+        padding-left: 15px;
+    }
+    #main-info, #more-info {
+        width: calc(50% - 15px);
+    }
+}
+
 @media screen and (min-width: 700px) {
     #restaurants-list li {
         width: calc(33.333333% - 94px);
@@ -295,5 +321,11 @@ nav h1 a {
         width: calc(30% - 22px);
         text-align: center;
         display: inline-block;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #reviews-list li {
+        width: calc(33.33333% - 52px);
     }
 }
