@@ -200,12 +200,14 @@ nav h1 a {
   top: 0;
   width: 100%;
   z-index: 1000;
+  height: auto;
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 60vh;
-  position: static;
+  height: 50vh;
   width: 100%;
+  position: relative;
+  top: 100px;
 }
 .inside #map {
   background-color: #ccc;
@@ -219,6 +221,10 @@ nav h1 a {
 }
 #main-info, #more-info {
     display: inline-block;
+    width: 100%;
+}
+#main-info {
+    margin-top: 100px;
 }
 #restaurant-name, #restaurant-address {
   color: #f18200;
@@ -295,7 +301,7 @@ nav h1 a {
   color: #666;
 }
 
-@media screen and (min-width: 460px) {
+@media screen and (min-width: 461px) {
     #restaurants-list li {
         width: calc(50% - 94px);
     }
@@ -307,13 +313,14 @@ nav h1 a {
     }
     #more-info {
         padding-left: 15px;
+        margin-top: 100px;
     }
     #main-info, #more-info {
         width: calc(50% - 15px);
     }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 701px) {
     #restaurants-list li {
         width: calc(33.333333% - 94px);
     }
