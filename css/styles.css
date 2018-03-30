@@ -51,6 +51,9 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   width: calc(100% - 50px);
 }
 /* ====================== Navigation ====================== */
+header {
+    background-color: #252831;
+}
 nav {
   width: 100%;
   height: auto;
@@ -59,7 +62,7 @@ nav {
 }
 nav h1 {
   margin: auto;
-  padding: 30px 0;
+  padding: 30px 0 15px 0;
 }
 nav h1 a {
   color: #fff;
@@ -67,6 +70,9 @@ nav h1 a {
   font-weight: 200;
   letter-spacing: 10px;
   text-transform: uppercase;
+}
+.skip-link-to-filter {
+    color: transparent;
 }
 #breadcrumb {
     padding: 10px 40px 16px;
@@ -134,6 +140,9 @@ nav h1 a {
   margin: 10px;
   padding: 0 10px;
   width: calc(50% - 22px);
+}
+.filter-options select:focus {
+    outline: 1px solid blue;
 }
 
 /* ====================== Restaurant Listing ====================== */
