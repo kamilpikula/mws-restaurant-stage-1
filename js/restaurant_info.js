@@ -145,7 +145,7 @@ createReviewHTML = (review) => {
 fillBreadcrumb = (restaurant=self.restaurant) => {
   const breadcrumb = document.getElementById('breadcrumb');
   const li = document.createElement('li');
-  li.innerHTML = restaurant.name;
+  li.innerHTML = `<a href="#" title="${restaurant.name} details" aria-current="page">${restaurant.name}</span>`;
   breadcrumb.appendChild(li);
 }
 
