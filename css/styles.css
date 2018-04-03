@@ -81,6 +81,7 @@ nav h1 a {
     font-size: 17px;
     margin: 0;
     width: 100%;
+    text-align: left;
 }
 
 /* Display list items side by side */
@@ -156,6 +157,7 @@ nav h1 a {
   flex-wrap: wrap;
 }
 #restaurants-list li {
+  box-sizing: content-box;
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
@@ -235,7 +237,9 @@ nav h1 a {
 #main-info {
     margin-top: 100px;
 }
-#restaurant-name, #restaurant-address {
+#restaurants-list h2,
+.restaurant-name,
+#restaurant-address {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 20pt;
