@@ -18,10 +18,13 @@
     <nav>
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
+    <a href="#filter-results" class="skip-link-to-filter">Skip to filter results</a>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" >
-      <li><a href="/">Home</a></li>
-    </ul>
+    <nav aria-label="Breadcrumb">
+      <ul id="breadcrumb" >
+        <li><a href="/" title="Navigate to the Home Page">Home</a></li>
+      </ul>
+    </nav>
     <!-- End breadcrumb -->
     <!-- End nav -->
   </header>
@@ -31,13 +34,13 @@
   <main id="maincontent">
     <!-- Beginning map -->
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" role="application"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
     <section id="restaurant-container">
       <div id="main-info">
-        <h1 id="restaurant-name"></h1>
+        <h2 id="restaurant-name" class="restaurant-name"></h2>
         <img id="restaurant-img">
         <p id="restaurant-cuisine"></p>
       </div>
