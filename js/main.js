@@ -143,7 +143,7 @@ createRestaurantHTML = (restaurant) => {
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   //image.setAttribute('sizes', '(max-width: 460px) 100%, (min-width: 461) and (max-width: 700px) 50%, (min-width: 701px) 33%');
   image.setAttribute('srcset', `${DBHelper.imageSmallUrlForRestaurant(restaurant)} 3x, ${DBHelper.imageMediumUrlForRestaurant(restaurant)} 2x, ${DBHelper.imageUrlForRestaurant(restaurant)} 1x`);
-  image.setAttribute('alt', `${DBHelper.imageAltUrlForRestaurant(restaurant)}`);
+  image.setAttribute('alt', `Image of ${DBHelper.imageAltUrlForRestaurant(restaurant)}`);
   li.append(image);
 
   const name = document.createElement('h2');
