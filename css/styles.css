@@ -29,6 +29,7 @@ a {
 	text-decoration: none;
 }
 a:hover, a:focus {
+    outline: 2px solid blue;
 	color: #EEB902;
 	text-decoration: none;
 }
@@ -177,7 +178,7 @@ nav h1 a {
   transition: 0.2s all;
 }
 #restaurants-list li:hover {
-    border: 2px solid #F45D01;
+    border: 2px solid;
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
