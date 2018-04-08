@@ -29,7 +29,6 @@ a {
 	text-decoration: none;
 }
 a:hover, a:focus {
-    outline: 2px solid blue;
 	color: #EEB902;
 	text-decoration: none;
 }
