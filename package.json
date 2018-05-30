@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "none",
   "main": "main.js",
-  "dependencies": {},
+  "dependencies": {
+    "curl": "^0.1.4"
+  },
   "devDependencies": {
     "grunt": "^1.0.2",
     "grunt-contrib-imagemin": "^2.0.1",
