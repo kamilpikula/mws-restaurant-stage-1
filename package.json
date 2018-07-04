@@ -4,7 +4,8 @@
   "description": "none",
   "main": "main.js",
   "dependencies": {
-    "curl": "^0.1.4"
+    "curl": "^0.1.4",
+    "idb": "^2.1.3"
   },
   "devDependencies": {
     "grunt": "^1.0.2",
